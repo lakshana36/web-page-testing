@@ -1,0 +1,35 @@
+<!-- <router-outlet></router-outlet>     -->
+<head>
+  <!-- this is link is for supporting chart icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="iSlot-masthead">
+<nav class="iSlot-nav">
+  <div style="height:50px" >
+      <i style="font-size:24px;padding: left 100px;" *ngIf="charticon" routerLink="stats" class="fa">&#xf201;</i>
+    </div>
+<div class="bts">
+      
+       <div class="tae">
+      
+      <i class="glyphicon glyphicon-option-vertical"></i>
+     
+    <div class="dropdown-content">
+        <a routerLink="updateprofile">Update Profile</a>
+        <a routerLink="cp">Change Password</a>
+        <a routerLink="skill" *ngIf="charticon">Skill Managment</a>
+        <a routerLink="location"*ngIf="charticon" >Location Managment</a>
+        <a routerLink="">Log out</a>
+    </div>
+</div>
+</div>
+          <h4><strong>iSlot</strong></h4>
+          <!-- here for skill managment pages we can write it in place of h3  -->
+          <h3><strong>{{text}}</strong></h3>  
+     
+</nav>
+    
+</div>
+     
+</body> 

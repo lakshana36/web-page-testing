@@ -1,0 +1,57 @@
+#grid{
+    width:17%;
+    height: 80px;
+    background-color: cadetblue;
+    margin-left: 10px;
+   
+}
+#pointsTable{
+    width:300px;
+    height: 300px;
+    border:3px solid black;
+    float:left;
+    margin-top: 10%;
+
+}
+img{
+    float: left;
+    height:40px;
+}
+.points{
+    margin-left: 18%;
+}
+#score{
+  
+    font-weight: bold;
+}
+#container{
+    margin-top: 5%;
+}
+#eventRow{
+       width:60%;
+       height: 280px;
+
+}
+#events{
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+#heading{
+    font-weight: bold;
+}
+
+.Eventdisplay{
+    width:70%;
+    float:left;
+}
+.totalPointsTaken{
+    display: inline-flex;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+.total{
+    float: left;
+    /* width: 50%; */
+    margin-right: 30px;
+}

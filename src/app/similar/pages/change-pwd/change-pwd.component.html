@@ -1,0 +1,50 @@
+<app-header text="Change Password" [charticon]="chart"></app-header>
+<form [formGroup]="registration_form">
+
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="main-container container-fluid col-lg-4 " id="border_id" align="center">
+                    <!-- <p>
+                        <span class="close">&times;</span>
+                    </p> -->
+                    <!-- <h3>Change password
+                         <span>
+                            <i class="far fa-times-circle" align="right"></i>
+                        </span> 
+                    </h3>
+                    <br/> -->
+                    <!-- <div>
+                        <input type="text" class="form-control"  placeholder="Username" autocomplete="off" required>
+                        <br/>
+                        <br/>
+                    </div> -->
+                    <br/>
+                    <div>
+                            <label for="password" class="col-lg-1 col-form-label">OldPassword</label> 
+                            <input type="password" class="form-control" formControlName="oldpassword" name="oldpassword" minlength="6" maxlength="16" autocomplete="off" required>
+                            <div class="alert alert-danger" *ngIf="registration_form.get('oldpassword').touched && registration_form.get('oldpassword').errors">Password is Required
+                            </div>
+                            <br/>
+                        </div>
+                    <div>
+                         <label for="password" class="col-lg-1 col-form-label">Password</label> 
+                        <input type="password" class="form-control" formControlName="password" name="password" minlength="6" maxlength="16" autocomplete="off" required>
+                        <div class="alert alert-danger" *ngIf="registration_form.get('password').touched && registration_form.get('password').errors">Password is Required
+                        </div>
+                        <br/>
+                    </div>
+                    <div>
+                         <label for="password" class="col-lg-1 col-form-label">ConfirmPassword</label> 
+                        <input type="password" class="form-control"  formControlName="cpassword" name="cpassword" minlength="6" maxlength="16" autocomplete="off"
+                            required>
+                        <div class="alert alert-danger" *ngIf="registration_form.get('cpassword').touched && registration_form.get('cpassword').errors">Password is Required
+                        </div>
+                        <br/>
+                    </div>               
+                        
+                    <button type="menu" class="btn btn-default form-control">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    

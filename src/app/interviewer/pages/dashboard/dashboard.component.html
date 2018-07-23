@@ -1,0 +1,56 @@
+<app-header text=" Interviewer Dashboard" [charticon]="chart"></app-header>
+
+<div class="container" id="container" >
+    <div class="Eventdisplay">
+        <div class="row" id="eventRow">
+            <h3 id="heading">Recent Events</h3>
+            <div class="col-lg-3 col-xs-6" id="grid" *ngFor="let event of recentEvents" (click)='redirect(event)' >
+                <!-- small box -->
+                <div class="small-box bg-green"  >
+                    <div class="inner">
+                        <p><span id="events" >{{event}}</span></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-xs-6" id="grid">
+
+                <div class="small-box bg-green">
+                    <div class="inner">
+
+                        <p><span id="events">Angular WalkIn</span></p>
+                    </div>
+
+                </div>
+            </div> -->
+        </div>
+        <div class="row" id="eventRow">
+            <h3 id="heading">Upcoming Events</h3>
+            <div class="col-lg-3 col-xs-6" id="grid" *ngFor="let event of upEvents"  (click)='redirect(event)' >
+                <!-- small box -->
+                <div class="small-box bg-green" >
+                    <div class="inner">
+                        <p><span id="events" >{{event}}</span> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row" id="pointsTable">
+        <div class="points">
+            <img src="../../../../assets/images/thunder1.png" alt="lit">
+            <h3>Points so far..</h3>
+        </div>
+        <div class="totalPointsTaken">
+            <div class="total">
+                <p>Total</p>
+                <p id="score">235</p>
+            </div>
+            <div class="totalInterviews">
+                <p>This month</p>
+                <p id="score">23</p>
+            </div>
+        </div>
+    </div>
+</div>

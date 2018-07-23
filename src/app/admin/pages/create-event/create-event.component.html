@@ -1,0 +1,66 @@
+<app-header text="Create New Event" [charticon]="charti"></app-header>
+<div class="actualform">
+    <form novalidate [formGroup] = 'idform' class="container">
+  <div class="inputform">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+      <span class="span-for-errors" id="errForName" *ngIf="idform.get('name').touched && idform.get('name').errors">*(Please enter the event name)</span>
+  </div>
+  <div class="inputform">
+      <label for="date">Date</label>
+      <input type="date"  formControlName="date" id="date" #date (change)='checkDate(date.value)'>
+      <span>{{errMessage}}</span>
+      
+  </div>
+  <div class="inputform">
+      <label for="startTime">Start Time</label>
+      <input type="time" formControlName="startTime"  id="starttime" >
+  </div>
+  <div class="inputform">
+          <label for="endTime">End Time</label>
+          <input type="time" formControlName="endTime" id="endtime" >
+      </div>
+  
+  <div class="inputform">
+      <label for="location">Location</label>
+      <div class="dropdown">
+      <select id="location  width=300px" formControlName="location" >
+          <option value ="{{locations[key].location}}" *ngFor="let key of keys">{{locations[key].location}}</option>
+         
+          
+      </select>
+      </div>
+      
+  </div>
+   <div class="inputform">
+    <label for="skill">skill</label>
+    <div class="dropdown">
+    <select id="skill width=300px" formControlName="skill" >
+        <option value ="{{data[key].skill}}"  *ngFor="let key of skillKeys">{{data[key].skill}}</option>
+        
+    </select>
+    </div>
+    
+  </div> 
+  <!-- <div class="inputform">
+          <ul class="list-group" *ngFor="let skills of data">
+              <li class="list-group-item" >{{skills.skill}}</li>
+          </ul>
+          
+          </div> -->
+          
+      <!-- </div> -->
+  
+   
+   
+   
+   
+   
+   
+  <div class="buttons">
+  <button type="button" [disabled]="idform.invalid" (click)="onStore()">Create Event</button>
+  <button type="reset" >Reset</button>
+  <!-- <button type="button" (click)="onGet()">DisplaySkills</button> -->
+  </div>
+    </form>
+  </div>

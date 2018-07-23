@@ -1,0 +1,70 @@
+.iSlot-masthead {
+  background-color:#D5D2D3;
+}
+h4{
+  font-size: 21px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  padding-top: 14px;
+  margin-top: -46px;
+  /* height: 75px; */
+
+}
+ .bts {
+  width: 20px;
+  height: 20px;
+  padding-right: 173px;
+  padding-top: 20px;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  margin-top: -48px;
+ 
+ }
+ /* h3 is for pages having dashboard and this is its styling */
+h3{
+  padding-top: 0px;
+  margin-top: -44px;
+  /* margin-bottom: -1px; */
+  font-size: 24px;
+  padding-bottom: 13px;
+  padding-left: 660px;
+  font-family: cursive;
+}
+/* ..................line chart icon is fa................ */
+
+.fa
+{
+
+padding-top: 0px;
+margin-top: 19px;
+font-size: 24px;
+padding-bottom: 15px;
+padding-left: 1321px;
+margin-bottom: -18px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content {
+display: none;
+position: relative;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+
+}
+
+.tae{
+  /* height:25px; */
+position: relative;
+  display: inline-block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.tae:hover .dropdown-content {display: block;}

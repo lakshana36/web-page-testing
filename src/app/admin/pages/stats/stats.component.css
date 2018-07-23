@@ -1,0 +1,38 @@
+.piechart{
+    float: left;
+    
+    width:49%;
+    height: 200px;
+}
+
+.month{
+    float: right;
+    width:50%;
+    height: 200px;
+    padding-top: 105px;
+    text-align: right;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.container{
+    width: 80%;
+}
+.boardTile{
+    width:100%;
+    height: 200px;
+    border: 1px solid black;
+}
+.boardTile img{
+    width: 10%;
+    height: 10%;
+}
+.board{
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.piendmon{
+    height: 210px;
+}

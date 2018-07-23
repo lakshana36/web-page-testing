@@ -1,0 +1,28 @@
+.main-container{
+    width:60%;
+    height:60%;
+    margin: 0px ;
+    padding:20px;
+    box-shadow:0px 0px 8px grey;
+    background-color:white;
+    
+}
+
+.btn
+{
+    margin-left: 5px;
+    
+}
+
+/* iSlot-masthead
+{
+height:38px;
+} */
+
+.col-form-label{
+    float: left;
+    text-align: left;
+}
+h1{
+    margin-top: 53px;
+}

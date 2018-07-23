@@ -1,0 +1,108 @@
+<app-header text=" Chart Page" [charticon]="charti"></app-header>
+<div class="container">
+  <div class="piendmon">
+      <div class="piechart">
+          <google-chart [data]="pieChartOptions"></google-chart>
+      </div>
+      <div class="month">
+          <label for="selectMonth" class="col-form-label">choose month</label>
+          <select type="text" class="form-control" class="selectMonth">
+              <option value="" selected disabled hidden>Choose here</option>
+              <option value="">Jan' 18</option>
+              <option value="">Feb' 18</option>
+          </select>
+      </div>
+  </div>
+  <div class="board">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="boardTile">
+              <h2>java</h2>
+                  <ul>
+                          <li>
+                              <span>sudheer</span>
+                              <span>
+                                  <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                  <span>score</span>
+                              </span>
+                          </li>
+                          <li>
+                              <span>sudheer</span>
+                              <span>
+                                  <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                  <span>score</span>
+                              </span>
+                          </li>
+                          <li>
+                              <span>sudheer</span>
+                              <span>
+                                  <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                  <span>score</span>
+                              </span>
+                          </li>
+                      </ul>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+              <div class="boardTile" *ngFor="let key of keys">
+                  <h2>java</h2>
+                      <ul>
+                              <li>
+                                  <span>sudheer</span>
+                                  <span>
+                                      <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                      <span>score</span>
+                                  </span>
+                              </li>
+                              <li>
+                                  <span>sudheer</span>
+                                  <span>
+                                      <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                      <span>score</span>
+                                  </span>
+                              </li>
+                              <li>
+                                  <span>sudheer</span>
+                                  <span>
+                                      <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                      <span>score</span>
+                                  </span>
+                              </li>
+                          </ul>
+              </div>
+          </div>
+
+
+
+          <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                  <div class="boardTile">
+                      <h2>java</h2>
+                          <ul>
+                                  <li>
+                                      <span>sudheer</span>
+                                      <span>
+                                          <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                          <span>score</span>
+                                      </span>
+                                  </li>
+                                  <li>
+                                      <span>sudheer</span>
+                                      <span>
+                                          <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                          <span>score</span>
+                                      </span>
+                                  </li>
+                                  <li>
+                                      <span>sudheer</span>
+                                      <span>
+                                          <img src="../../../../assets/images/thunder1.png" alt="thunder">
+                                          <span>score</span>
+                                      </span>
+                                  </li>
+                              </ul>
+                  </div>
+              </div> -->
+
+              
+  </div>
+</div>

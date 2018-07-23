@@ -1,0 +1,59 @@
+<!-- <router-outlet></router-outlet>     -->
+<!-- <app-header [text]></app-header> -->
+<div>{{text}}</div>
+<form [formGroup]="registration_form">
+
+    <div align="center">
+      <h1 >Interviewer Registration</h1>
+        <div class="main-container">
+            <div>
+                    <label for="Name" class="col-lg-1 col-form-label">Name</label>
+                    <input type="text" class="form-control" formControlName="Name" name="Name" autocomplete="off" required>
+                    <div class="alert alert-danger" *ngIf="registration_form.get('Name').touched && registration_form.get('Name').errors">Name is Required
+                    </div>
+                    <br/>
+            </div>
+            
+            <div>
+                <label for="email" class="col-lg-1 col-form-label">Email</label>
+                <input class="form-control" type="email" id="email" name="email"  formControlName="email" autocomplete="off" required >
+                <div class="alert alert-danger" *ngIf="registration_form.get('email').touched && registration_form.get('email').invalid ">Valid Email Required</div>                <br/>
+                <br/>
+            </div>
+  
+            <div>
+              <label for="password" class="col-lg-1 col-form-label">Password</label>
+              <input type="password" class="form-control" formControlName="password" name="password" autocomplete="off" required>
+              <div class="alert alert-danger" *ngIf="registration_form.get('password').touched && registration_form.get('password').errors">Password is Required
+              </div>
+              <br/>
+            </div>
+  
+            <div>
+                
+                    <label for="mobileno" class="col-lg-4 col-form-label">Mobile Number</label>
+                    <input type="text" class="form-control" id="mobileno" name="mobileno" formControlName="mobileno" maxlength="10" autocomplete="off" required>
+                    <div class="alert alert-danger" *ngIf="registration_form.get('mobileno').touched && registration_form.get('mobileno').errors">Provide Valid Number</div>
+                    <br/>
+            </div>
+            
+  <input type="text" style="display:none" value="interviewer" formControlName="Role" >
+  
+            <div>
+                <label for="Skills" class="col-lg-6 col-form-label">Skills (Hold shift to select more than one)</label>
+                <select name="Skills" id="" class="form-control" multiple class="form-control" formControlName="Skills" required>
+                    <option  *ngFor="let skillInfo of skillArray">{{skillInfo}}</option>
+                </select> 
+                <br/>
+            </div>
+  
+            <div>
+              <button type="button" class="btn btn-success" id="myForm"
+              (click)="clear()">Clear</button>
+                <!-- <button class="btn btn-primary" type="button">Register</button> -->
+                <button type="button" class="btn btn-success" id="submitting" [disabled]="registration_form.invalid"
+                 (click)="Register()">Register</button>
+            </div>
+        </div>
+    </div>
+  </form>

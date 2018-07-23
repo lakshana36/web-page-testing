@@ -1,0 +1,35 @@
+.container{
+    margin: 5em auto;
+    width:60%;
+}
+.glyphicon{
+    height: 26px;
+    width: 26px;
+    float: right;
+    margin-left: 100%;
+    margin-bottom: 11px;
+
+}
+.skillTile input{
+    background: transparent;
+    border: none;
+    text-align: center;
+    width:95%;
+}
+.skillTile{
+    width: 63%;
+    height: 105px;
+    text-align: center;
+    color: #eee;
+    background-color: #607D8B;
+    border-radius: 2px;
+    margin:3%;
+    padding: 5px;
+}
+.form-control{
+    width: 50%;
+    margin: auto auto 3% auto;
+
+}
+
+

@@ -1,0 +1,228 @@
+<router-outlet></router-outlet>
+<div class="row" id="row1">
+
+<<<<<<< HEAD
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active">
+        <a>View</a>
+      </li>
+      <li role="presentation">
+        <a routerLink="update-event">Update</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="container">
+    <div class="row" *ngFor="let keys of pk">
+        <div class="col-lg-1">
+  
+          </div>
+      <div class="col-lg-10">
+        <form>
+          <div class="row">
+            <div class="card bg-secondary">
+              <div class="card-body">
+                <div class="col-lg-3">
+                 {{keys.startTime}}-{{keys.endTime}}
+                </div>
+                <div class="col-lg-6">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-4">
+                  <div class="contact-container"> 
+                      <div class="row-lg-6 bts">
+                          <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; 
+                          <!-- {{keys.numberOfInterviwersEnrolled.userId}} -->
+                          </div>
+                          <div class="row-lg-6">
+                          <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; priyanka
+                          </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-6"></div>
+                </div>
+                <div class="col-lg-3">
+                  <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation">
+                      <a>
+                        <span class="label label-info">2</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <!-- <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="col-lg-3">
+                  11 AM - 1 PM
+                </div>
+                <div class="col-lg-6">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-4">
+                      <div class="contact-container">
+                              <div class="row-lg-6 bts">
+                              <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; priyanka
+                              </div>
+                              <div class="row-lg-6">
+                              <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; priyanka
+                              </div> 
+                          </div>
+                  </div>
+                  <div class="col-lg-6"></div>
+                </div>
+                <div class="col-lg-3">
+                  <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation">
+                      <a>
+                        <span class="label label-info">2</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="col-lg-3">
+                  1 PM - 4 PM
+                </div>
+                <div class="col-lg-6">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-4">
+                      <div class="contact-container"> 
+                        
+                          <div class="row-lg-6 bts">
+                              <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; priyanka
+                              </div>
+                              <div class="row-lg-6">
+                              <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; priyanka
+                              </div>  
+                          </div>
+                  </div>
+                  <div class="col-lg-6"></div>
+                </div>
+                <div class="col-lg-3">
+                  <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation">
+                      <a>
+                        <span class="label label-info">2</span>
+  
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="col-lg-3">
+                  1 PM - 4 PM
+                </div>
+                <div class="col-lg-6">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-4">
+                      <div class="contact-container"> 
+                          <div class="row-lg-6 bts">
+                          <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; priyanka
+                          </div>
+                          <div class="row-lg-6">
+                          <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-th-list"></i>&nbsp; priyanka
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6"></div>
+                </div>
+                <div class="col-lg-3">
+                  <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation">
+                      <a>
+                        <span class="label label-info">2</span>
+  
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <br/> -->
+  
+        </form>
+      </div>
+      <div class="col-lg-1">
+  
+      </div>
+      
+=======
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active">
+      <a (click)="redirect('view')">View</a>
+    </li>
+    <li role="presentation">
+      <a (click)="redirect('update')">Update</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-1">
+
+        </div>
+    <div class="col-lg-10">
+      <form>
+        <div class="row" *ngFor='let slot of slots'>
+          <div class="card bg-secondary">
+            <div class="card-body">
+              <div class="col-lg-3">
+                {{slot.startTime+"-"+slot.endTime}}
+              </div>
+              <div class="col-lg-6">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                <div class="contact-container"> 
+                    <div class="row-lg-6 bts" >
+                      <div   *ngFor='let contact of slot.numberOfInterviwersEnrolled'> <i class="glyphicon glyphicon-user" *ngIf='contact.userId'></i><i class="glyphicon glyphicon-th-list" *ngIf='contact.userId'></i>&nbsp; {{contact.userId}} 
+                        </div>
+                      </div>
+                        
+                </div>
+                </div>
+                <div class="col-lg-6"></div>
+              </div>
+              <div class="col-lg-3">
+                <ul class="nav nav-pills" role="tablist">
+                  <li role="presentation">
+                    <a>
+                      <span class="label label-info">{{slot.numberOfInterviwersEnrolled.length-1}}</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+      </form>
+    </div>
+    <div class="col-lg-1">
+
+>>>>>>> aa0e618649ebf1cee817a0388de9110c6bb02e33
+    </div>
+  </div>

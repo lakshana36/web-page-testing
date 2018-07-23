@@ -1,0 +1,118 @@
+<div class="row" id="row1">
+
+        <ul class="nav nav-pills">
+            <li role="presentation">
+                <a>View</a>
+            </li>
+            <li role="presentation" class="active">
+                <a>Update</a>
+            </li>
+        </ul>
+      </div>
+      
+      <div class="container">
+        <div class="row" *ngFor="let info of updateInfo">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <form>
+                    <div class="row">
+                        <div class="card bg-secondary">
+                            <div class="card-body">
+                                <div class="col-lg-3">
+                                    {{info.name}}
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-4">
+                                        <ul class="nav nav-pills" role="tablist">
+                                            <li role="presentation">
+                                                <a>
+                                                    <span class="label label-info">{{info.totalInterviews}}</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button type="button" class="btn btn-success">Approve</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <!-- <br>
+      
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-lg-3">
+                                    Sudheer
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-4">
+                                        <ul class="nav nav-pills" role="presentation">
+                                            <li role="presentation">
+                                                <a>
+                                                    <span class="label label-info">2</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button type="button" class="btn btn-success">Approve</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <br>
+      
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-lg-3">
+                                    Sudheer
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-4">
+                                        <ul class="nav nav-pills" role="tablist">
+                                            <li role="presentation">
+                                                <a>
+                                                    <span class="label label-info">2</span>
+      
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <button type="button" class="btn btn-success">Approve</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/> -->
+      
+                </form>
+            </div>
+            <div class="col-lg-1">
+          </div>
+            </div>
+            <div class="row" id="updateButton">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <button class="btn btn-primary" routerLink="../../" onclick="Closeevent" >Close Event</button>
+                </div>
+                <div class="col-lg-4">
+      
+                </div>
+            </div>
+        
+      </div>
+      

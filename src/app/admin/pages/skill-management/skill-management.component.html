@@ -1,0 +1,19 @@
+<app-header text=" Skill Managment" [charticon]="chart"></app-header>
+<div class="container">
+    
+    <input type="text" class="form-control"  *ngIf="data" placeholder="Add new skill" #skillBox (keydown.enter)="addSkill(skillBox)">
+<div class="skillbox">
+
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 " *ngFor="let key of keys">
+        <div class="skillTile" >
+            <div class="delIcon">
+                    <i class="glyphicon glyphicon-trash"  (click)='onDel(key)'></i>
+                <!-- <img src="../assets/images/delete" > -->
+            </div>
+            <input type="text" value="{{data[key].skill}}" #skillEdit (change)="onUpdate(key,skillEdit)">    
+        </div>
+    </div>
+  </div>
+</div>
+

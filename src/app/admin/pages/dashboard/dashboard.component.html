@@ -1,0 +1,46 @@
+<app-header text=" Admin Dashboard" [charticon]="charti"></app-header>
+<div class="container" id="container">
+  
+  <i class="glyphicon glyphicon-plus-sign"  routerLink="event"></i>
+<div class="Eventdisplay">
+  
+<div class="row" id="eventRow">
+
+<h3 id="heading">Recent Events</h3>
+    <div class="col-lg-3 col-xs-6" id="grid" *ngFor="let event of recentEvents" (click)='redirect(event)'>
+        <!-- small box -->
+        <div class="small-box bg-green">
+            <div class="inner">
+               
+                <p><span id="events" >{{event}}</span></p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <div class="col-lg-3 col-xs-6" id="grid">
+         small box 
+            <div class="small-box bg-green">
+                <div class="inner">
+                   
+                    <p><span id="events" routerLink="view-event">Angular WalkIn</span></p>
+                </div>
+                
+            </div>
+        </div> -->
+</div>
+<div class="row" id="eventRow">
+        <h3 id="heading">Upcoming Events</h3>
+    <div class="col-lg-3 col-xs-6" id="grid" *ngFor="let event of upEvents" (click)='redirect(event)' >
+        <!-- small box -->
+        <div class="small-box bg-green"  >
+            <div class="inner">
+                
+                <p><span id="events">{{event}}</span> </p>
+            </div>
+            
+        </div>
+      </div>
+   
+    </div>
+</div>
+ 

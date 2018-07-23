@@ -1,0 +1,134 @@
+{
+        "eventDate": "2018-06-30",
+        "eventEndTime": "12:00",
+        "eventLocation": "chennai",
+        "eventName": "angular",
+        "eventStartTime": "10:00",
+        "slots": [
+            {
+                "endTime": "10:30",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "kishore"
+                    },
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "siva"
+                    }
+                ],
+                "startTime": "10:00"
+            },
+            {
+                "endTime": "11:00",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Sudheer"
+                    }
+                ],
+                "startTime": "10:30"
+            },
+            {
+                "endTime": "11:30",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Ajith"
+                    },
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Siva"
+                    }
+                ],
+                "startTime": "11:00"
+            },
+            {
+                "endTime": "12:00",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Kishore"
+                    },
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Ajith"
+                    }
+                ],
+                "startTime": "11:30"
+            }
+        ]
+    }
+
+
+
+     {
+        "eventDate": "2018-06-30",
+        "eventEndTime": "12:00",
+        "eventLocation": "chennai",
+        "eventName": "react",
+        "eventStartTime": "10:00",
+        "slots": [
+            {
+                "endTime": "10:30",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Sudheer"
+                    },
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Ajith"
+                    }
+                ],
+                "startTime": "10:00"
+            },
+            {
+                "endTime": "11:00",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Siva"
+                    }
+                ],
+                "startTime": "10:30"
+            },
+            {
+                "endTime": "11:30",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Kishore"
+                    },
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Prakash"
+                    }
+                ],
+                "startTime": "11:00"
+            },
+            {
+                "endTime": "12:00",
+                "id": "",
+                "numberOfInterviwersEnrolled": [
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Sudheer"
+                    },
+                    {
+                        "numberOfInterviewsTaken": "",
+                        "userId": "Siva"
+                    }
+                ],
+                "startTime": "11:30"
+            }
+        ]
+    }
+}

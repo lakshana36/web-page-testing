@@ -1,0 +1,25 @@
+<app-header text="Angular Walk-In" [charticon]="chart"></app-header>
+<div class="timeSlots">
+    <h3>Event Enrollment</h3>
+    <div class="firstSlot" *ngFor="let slot of slots">
+        <div class="timeDetails">
+            <p id="time">{{slot.startTime+"-"+slot.endTime}}</p>
+            <span class="dot" id="round" >
+              <span style="font-size:22px">{{slot.numberOfInterviwersEnrolled.length-1}}</span>
+               
+              <!-- <ng-template #content><span style="font-size:22px">0</span> </ng-template> -->
+            </span>
+            <label class="switch" >
+                  <input type="checkbox"  #checked id="{{slot.id}}" (change)='onChangeBox(checked)' >
+                  <span class="slider round"></span>
+                </label>
+            <span class="interviews">  
+                        <label for="interviewsTaken">Total Interviews Taken</label>
+                         <input type="text" #interviewsTaken (keydown.enter)="onEnter(interviewsTaken)">
+           </span>
+
+        </div>
+    </div>
+   
+    <button type="button">Update</button>
+</div>
